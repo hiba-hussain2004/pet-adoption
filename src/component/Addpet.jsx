@@ -1,9 +1,10 @@
 import React from 'react'
+import Petnavigation from '../Petnavigation'
 
 const Addpet = () => {
   return (
     <div>
-
+<Petnavigation/>
     <div className="container">
             <h4>REGISTRATION FORM</h4>
             <div className="row">
