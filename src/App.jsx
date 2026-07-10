@@ -4,6 +4,8 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Addpet from './component/Addpet'
+import Searchpet from './component/Searchpet'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -12,7 +14,8 @@ function App() {
     <>
       <BrowserRouter>
       <Routes>
-        <Route/>
+        <Route path="/" element={<Addpet />}/>
+        <Route path="/search" element={<Searchpet />} />
       </Routes>
       
       </BrowserRouter>
